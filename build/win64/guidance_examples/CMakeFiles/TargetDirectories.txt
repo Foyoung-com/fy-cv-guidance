@@ -1,0 +1,4 @@
+D:/foyoung/fy-cv-guidance/build/win64/guidance_examples/CMakeFiles/ALL_BUILD.dir
+D:/foyoung/fy-cv-guidance/build/win64/guidance_examples/CMakeFiles/ZERO_CHECK.dir
+D:/foyoung/fy-cv-guidance/build/win64/guidance_examples/uart_example/CMakeFiles/dji_guidance_uart.dir
+D:/foyoung/fy-cv-guidance/build/win64/guidance_examples/usb_example/DJI_guidance_example/CMakeFiles/dji_guidance_usb.dir
