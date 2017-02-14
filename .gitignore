@@ -1,33 +1,34 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+*Thumbs.db
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-*~
 *.user
+*.aps
+*.pch
+*.vspscc
+*.vshost.exe.*
+*.ncb
 *.suo
+*.sln.docstates
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.sbr
+*.vspx
+*.pyc
+*.swp
+*~
+*.o
+_ReSharper*/
+
+#project specific
+/ipch
+/Release
+/Debug
+tags/
+.vscode
+build/**/guidance_examples
+tmp
+obj
+ipch.*~
