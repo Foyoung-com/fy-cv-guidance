@@ -160,9 +160,8 @@ int read_serial( unsigned char *buf, int len, int timeout )
     return read_len;
 }
 
-int disconnect_serial(void)
+void disconnect_serial()
 {
 	close(g_sdk_uart_fd);
 	g_sdk_uart_fd = -1;
-	return 0;
 }

@@ -24,6 +24,8 @@ include("${GUIDANCE_PLATFORMS_PATH}/common/ConfigLib.cmake")
 
 set(GUIDANCE_EXAMPLES_REQUIRED_LIBS ${GUIDANCE_EXAMPLES_REQUIRED_LIBS} ${Guidance_Lib})
 
+get_filename_component(GUIDANCE_DYLIB_PATH "${Guidance_Lib}" DIRECTORY)
+
 list(APPEND CMAKE_PREFIX_PATH "${OPENCV_LIBRARYDIR}")
 
 include_directories(${GUIDANCE_SDK_INC_PATH})
