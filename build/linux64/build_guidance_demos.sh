@@ -16,7 +16,7 @@ CMAKE_OPTIONS="$CMAKE_BUILD_TYPE"
 mkdir -p $output
 pushd $output
 
-$CMAKE "$project_root/guidance-sdk/demos/"  "$CMAKE_OPTIONS"
+$CMAKE "$project_root/guidance-sdk/demo/"  "$CMAKE_OPTIONS"
 
 numprocs=`cat /proc/cpuinfo | grep "processor" | wc -l`
 
