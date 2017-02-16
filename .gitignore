@@ -20,6 +20,8 @@
 *.swp
 *~
 *.o
+*.opensdf
+*.sdf
 _ReSharper*/
 
 #project specific
@@ -28,7 +30,7 @@ _ReSharper*/
 /Debug
 tags/
 .vscode
-build/**/guidance_examples
+build/**/guidance_*/
 tmp
 obj
 ipch.*~
