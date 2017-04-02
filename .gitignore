@@ -30,7 +30,8 @@ _ReSharper*/
 /Debug
 tags/
 .vscode
-build/**/guidance_*/
+build/**/guidance*/
+build/**/fy_guidance*/
 tmp
 obj
 ipch.*~
