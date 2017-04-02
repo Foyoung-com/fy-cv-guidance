@@ -753,14 +753,6 @@
 #    endif
 #endif
 
-#ifndef FY_CONSTEXPR
-#    if (((__GNUC__ * 100) + __GNUC_MINOR__) >= 407) || _MSC_VER >= 1900
-#        define FY_CONSTEXPR constexpr
-#    else
-#        error "constexpr is not supported by your compiler, please upgrade!"
-#    endif
-#endif
-
 #ifndef FY_FUNC_NAME
 #    if defined(_WIN32) && defined (_MSC_VER)
 #        define FY_FUNC_NAME __FUNCTION__

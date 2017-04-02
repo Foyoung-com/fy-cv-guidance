@@ -18,4 +18,10 @@ add_custom_command(TARGET checkerboard POST_BUILD
                 -DDESTINATION=$<TARGET_FILE_DIR:checkerboard>
                 -P "${GUIDANCE_PLATFORMS_PATH}/common/CopyDeps.cmake")
                                                                                                                                                                       
-                                                                           
+if(MSVC)
+    list(REMOVE_DUPLICATES OpenCV_LIB_DIR)
+    add_custom_command(TARGET checkerboard POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy
+		${OpenCV_LIB_DIR}/../bin/opencv_ffmpeg${OpenCV_VERSION_MAJOR}${OpenCV_VERSION_MINOR}${OpenCV_VERSION_PATCH}_64.dll
+		${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIG>)
+endif(MSVC)

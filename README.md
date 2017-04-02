@@ -83,7 +83,7 @@ The obstacle bypass demo implements fully autonomous flight runs onboard. The de
 
     * Build:
 
-      change to build\linux64 directory: `cd build/linux64`
+      change to build/linux64 directory: `cd build/linux64`
 
       run build_guidance_demos.sh
 
@@ -105,7 +105,7 @@ The obstacle bypass demo implements fully autonomous flight runs onboard. The de
 	 
 5. Run camshift demo on Linux
 
-	* Connect Guidance system to you PC via USB
+    * Connect Guidance system to you PC via USB
 
     * run build/linux64/guidance_demos/bin/sdk_tracking_camshift
 
@@ -118,3 +118,76 @@ The obstacle bypass demo implements fully autonomous flight runs onboard. The de
 6. Run obstacle bypass demo onboard
 
     * TODO
+
+
+## FY Guidance Checker board example
+The checker board detector.
+
+1. Build checker board detection example on Windows:
+
+   * Requirements:
+
+     Windows 7/10
+
+         Visual Studio 2013 64 bit
+
+   * Build:
+
+     Change to build\win64 directory: 'cd build\win64'
+   
+     run build.cmd
+
+2. Build checker board detection example on Linux:
+
+   * Requirements:
+
+     Ubuntu 14.04 64bit
+
+     gcc toolchain
+
+   * Build:
+
+     Change to build/linux64 directory: 'cd build/linux64'
+
+     run build.sh
+
+3. Run checker board example on Windows:
+
+   * Requirements:
+
+     Guidace Assisant Software is installed
+
+   * Run checkerboard.exe
+   
+     The application fails the first attempt, it merely generates a configuration file checker_conf0.xml
+
+   * Modify the generated configuration file
+
+     * enable_video: set to 1 to save a video, set to 0 to disable saving
+     
+     * source: set video source.
+       * 0: guidance
+       * 1: video file
+       * 2: integrated system camera
+
+     * source_file: video file path, only used when source is 1
+
+     * camera_index: system camera index
+
+     * vbus_index: guidance vbus index
+
+     * horiz_corners: number of checker board grids horizontally
+
+     * colum_corners: number of checker board grids vertically
+
+   * Run checkerboard with the configuration file path as the parameter:
+
+     checkerboard checker_conf0.xml
+
+   * In case of guidance source, please connect guidance system to your PC via USB.
+
+4. Run checker board example on Linux:
+
+   * ditto
+
+

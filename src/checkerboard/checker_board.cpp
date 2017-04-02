@@ -62,6 +62,7 @@ int guidance_event_callback(int data_type, int data_len, char *data)
         }
         data_cond_var.notify_one();
     }
+    return 0;
 }
 
 int initialize(const fc::ConfSerializer &conf)
